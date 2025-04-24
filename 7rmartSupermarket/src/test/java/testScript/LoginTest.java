@@ -2,6 +2,7 @@ package testScript;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.Base;
@@ -18,6 +19,8 @@ public class LoginTest extends Base {
 		login.enterUsernameOnUsernameField(username);
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
+		boolean isDashboardDisplayed=login.dashboardIsDisplayed();
+		Assert.assertTrue(isDashboardDisplayed,"User was Unable to Login Successfully");
 	}
 @Test
 	public void verifyUserLoginwithInvalidUsername() throws IOException {
@@ -27,6 +30,9 @@ public class LoginTest extends Base {
 		login.enterUsernameOnUsernameField(username);
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
+		String actual=login.getPageTitle();
+		String expected="//b[text()='7rmart supermarket']";
+		Assert.assertEquals(actual, expected,"User was able to Login with Invalid Username");
 	}
 @Test
 	public void verifyUserLoginwithInvalidPassword() throws IOException {
