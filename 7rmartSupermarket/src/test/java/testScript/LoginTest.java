@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 	
-@Test
+@Test(priority=1,description="verifying whether the user is able to successfully login with valid credentials")
 	public void verifyUserLoginwithValidCredentials() throws IOException {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
@@ -22,7 +22,7 @@ public class LoginTest extends Base {
 		boolean isDashboardDisplayed=login.dashboardIsDisplayed();
 		Assert.assertTrue(isDashboardDisplayed,"User was Unable to Login Successfully");
 	}
-@Test
+@Test(priority=2,description="verifying whether the user is able to successfully login with invalid username")
 	public void verifyUserLoginwithInvalidUsername() throws IOException {
 		String username=ExcelUtility.readStringData(1, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(1, 1, "LoginPage");
@@ -31,10 +31,10 @@ public class LoginTest extends Base {
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
 		String actual=login.getPageTitle();
-		String expected="//b[text()='7rmart supermarket']";
+		String expected="7rmart supermarket";
 		Assert.assertEquals(actual, expected,"User was able to Login with Invalid Username");
 	}
-@Test
+@Test(priority=3)
 	public void verifyUserLoginwithInvalidPassword() throws IOException {
 		String username=ExcelUtility.readStringData(2, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(2, 1, "LoginPage");
@@ -43,7 +43,7 @@ public class LoginTest extends Base {
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
 	}
-@Test
+@Test(priority=4)
 	public void verifyUserLoginwithInvalidCredentials() throws IOException {
 		String username=ExcelUtility.readStringData(3, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(3, 1, "LoginPage");

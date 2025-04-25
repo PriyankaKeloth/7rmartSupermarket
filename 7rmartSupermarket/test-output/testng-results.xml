@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-24T20:43:32 IST" name="Default suite" finished-at="2025-04-24T20:43:44 IST" duration-ms="12781">
+  <suite started-at="2025-04-25T20:56:32 IST" name="Default suite" finished-at="2025-04-25T20:56:43 IST" duration-ms="11282">
     <groups>
     </groups>
-    <test started-at="2025-04-24T20:43:32 IST" name="Default test" finished-at="2025-04-24T20:43:44 IST" duration-ms="12781">
+    <test started-at="2025-04-25T20:56:32 IST" name="Default test" finished-at="2025-04-25T20:56:43 IST" duration-ms="11282">
       <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.LoginTest@4686afc2]" started-at="2025-04-24T20:43:32 IST" name="initialiseBrowser" finished-at="2025-04-24T20:43:37 IST" duration-ms="4905" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.LoginTest@4686afc2]" started-at="2025-04-25T20:56:32 IST" name="initialiseBrowser" finished-at="2025-04-25T20:56:36 IST" duration-ms="4045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserLoginwithInvalidUsername()[pri:0, instance:testScript.LoginTest@4686afc2]" started-at="2025-04-24T20:43:37 IST" name="verifyUserLoginwithInvalidUsername" finished-at="2025-04-24T20:43:44 IST" duration-ms="7539" status="FAIL">
+        <test-method signature="verifyUserLoginwithInvalidUsername()[pri:2, instance:testScript.LoginTest@4686afc2]" started-at="2025-04-25T20:56:36 IST" name="verifyUserLoginwithInvalidUsername" description="verifying whether the user is able to successfully login with invalid username" finished-at="2025-04-25T20:56:43 IST" duration-ms="7135" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Dashboard']"}
-  (Session info: chrome=135.0.7049.114)
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"//b[text()='7rmart supermarket']"}
+  (Session info: chrome=135.0.7049.115)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71837f3019ca13a7e8ecc1cfb4593f56, findElement {value=//p[text()='Dashboard'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Ranil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50376}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50376/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 71837f3019ca13a7e8ecc1cfb4593f56]]>
+Command: [f624643f926207f98cd9033c6d4f4311, findElement {value=//b[text()='7rmart supermarket'], using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Ranil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55204}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55204/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f624643f926207f98cd9033c6d4f4311]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Dashboard']"}
-  (Session info: chrome=135.0.7049.114)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"//b[text()='7rmart supermarket']"}
+  (Session info: chrome=135.0.7049.115)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71837f3019ca13a7e8ecc1cfb4593f56, findElement {value=//p[text()='Dashboard'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.114, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Ranil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50376}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50376/devtoo..., se:cdpVersion: 135.0.7049.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 71837f3019ca13a7e8ecc1cfb4593f56
+Command: [f624643f926207f98cd9033c6d4f4311, findElement {value=//b[text()='7rmart supermarket'], using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.114 (63fd8a7d9d0..., userDataDir: C:\Users\Ranil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55204}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55204/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f624643f926207f98cd9033c6d4f4311
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -52,8 +52,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-at pages.LoginPage.dashboardIsDisplayed(LoginPage.java:34)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at pages.LoginPage.getPageTitle(LoginPage.java:38)
 at testScript.LoginTest.verifyUserLoginwithInvalidUsername(LoginTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -89,7 +89,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginwithInvalidUsername -->
-        <test-method is-config="true" signature="closeAndQuit()[pri:0, instance:testScript.LoginTest@4686afc2]" started-at="2025-04-24T20:43:44 IST" name="closeAndQuit" finished-at="2025-04-24T20:43:44 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="closeAndQuit()[pri:0, instance:testScript.LoginTest@4686afc2]" started-at="2025-04-25T20:56:43 IST" name="closeAndQuit" finished-at="2025-04-25T20:56:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAndQuit -->
