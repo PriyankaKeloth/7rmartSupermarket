@@ -12,6 +12,7 @@ import automationCore.Base;
 import pages.AdminUserPage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
+import utilities.RandomDataUtility;
 
 public class AdminUserTest extends Base {
 	
@@ -28,9 +29,10 @@ public class AdminUserTest extends Base {
 		adminuser.clickOnAdminUsersField();
 		adminuser.selectOnManageUsers();
 		adminuser.clickOnNewUserButton();
+		RandomDataUtility random=new RandomDataUtility();
 		
-		String newuserusername=ExcelUtility.readStringData(0, 0, "AdminUserPage");
-		String newuserpassword=ExcelUtility.readStringData(0, 1, "AdminUserPage");
+		String newuserusername=random.createRandomUserName();
+		String newuserpassword=random.createRandomPassword();
 		adminuser.enterNewUserNameOnUsernameField(newuserusername);
 		adminuser.enterNewUserPasswordOnPasswordField(newuserpassword);
 		adminuser.clickUserTypeDropdown();
