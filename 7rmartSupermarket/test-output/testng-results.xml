@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-01T18:16:38 IST" name="Default suite" finished-at="2025-05-01T18:16:44 IST" duration-ms="5982">
+  <suite started-at="2025-05-02T06:22:31 IST" name="Default suite" finished-at="2025-05-02T06:22:37 IST" duration-ms="6434">
     <groups>
     </groups>
-    <test started-at="2025-05-01T18:16:38 IST" name="Default test" finished-at="2025-05-01T18:16:44 IST" duration-ms="5982">
-      <class name="testScript.AdminUserTest">
-        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.AdminUserTest@4d154ccd]" started-at="2025-05-01T18:16:38 IST" name="initialiseBrowser" finished-at="2025-05-01T18:16:41 IST" duration-ms="2908" status="PASS">
+    <test started-at="2025-05-02T06:22:31 IST" name="Default test" finished-at="2025-05-02T06:22:37 IST" duration-ms="6434">
+      <class name="testScript.ManageNewsTest">
+        <test-method is-config="true" signature="initialiseBrowser()[pri:0, instance:testScript.ManageNewsTest@4d154ccd]" started-at="2025-05-02T06:22:31 IST" name="initialiseBrowser" finished-at="2025-05-02T06:22:35 IST" duration-ms="3754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyAdmincanSearchaUser()[pri:0, instance:testScript.AdminUserTest@4d154ccd]" started-at="2025-05-01T18:16:41 IST" name="verifyAdmincanSearchaUser" finished-at="2025-05-01T18:16:44 IST" duration-ms="3012" status="PASS">
+        <test-method signature="verifyUsercanSearchNews()[pri:0, instance:testScript.ManageNewsTest@4d154ccd]" started-at="2025-05-02T06:22:35 IST" name="verifyUsercanSearchNews" finished-at="2025-05-02T06:22:37 IST" duration-ms="2623" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAdmincanSearchaUser -->
-        <test-method is-config="true" signature="closeAndQuit()[pri:0, instance:testScript.AdminUserTest@4d154ccd]" started-at="2025-05-01T18:16:44 IST" name="closeAndQuit" finished-at="2025-05-01T18:16:44 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyUsercanSearchNews -->
+        <test-method is-config="true" signature="closeAndQuit()[pri:0, instance:testScript.ManageNewsTest@4d154ccd]" started-at="2025-05-02T06:22:37 IST" name="closeAndQuit" finished-at="2025-05-02T06:22:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAndQuit -->
-      </class> <!-- testScript.AdminUserTest -->
+      </class> <!-- testScript.ManageNewsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
