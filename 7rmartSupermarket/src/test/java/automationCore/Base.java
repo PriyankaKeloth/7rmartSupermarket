@@ -37,7 +37,7 @@ if(iTestResult.getStatus()==ITestResult.FAILURE)
 
 }
 
-	driver.quit();
+	//driver.quit();
 
 	
 }

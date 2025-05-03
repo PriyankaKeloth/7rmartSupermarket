@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,8 +27,11 @@ public class ManageProductPage {
 	@FindBy(id="p_mrp")private WebElement mrp;
 	@FindBy(id="p_stock")private WebElement stockAvailability;
 	@FindBy(xpath="//div[@role='textbox']")private WebElement description;
-	@FindBy(xpath="//label[normalize-space()='Yes']")private WebElement StockRadio;
-	
+	@FindBy(xpath="//label[normalize-space()='Yes']")private WebElement stockRadio;
+	@FindBy(id="main_img")private WebElement image;
+	@FindBy(xpath="//input[@name='featured' and @value='yes']") private WebElement featuredRadio;
+	@FindBy(xpath="//input[@name='combo' and @value='no']")private WebElement comboPackRadio;
+	@FindBy(xpath="//button[text()='Save']")private WebElement saveButton;
 	
 	
 	
@@ -74,7 +78,29 @@ public class ManageProductPage {
 		description.sendKeys(note);
 	}
 	public void clickOnavailabilityofStockOnStockfield() {
-		StockRadio.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+		js.executeScript("arguments[0].click();", stockRadio);
+		//stockRadio.click();
 	}
-	
+	public void uploadProductPictureInImageField() {
+		image.sendKeys("C:\\Users\\Ranil\\git\\7rmartSupermarket\\7rmartSupermarket\\src\\test\\resources\\ManageProduct");	
+	}
+	public void clickFeaturedInFeaturedField() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+		js.executeScript("arguments[0].click();", featuredRadio);
+		//featuredRadio.click();
+	}
+	public void clickComboDetailsinComboPackField() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,350)", "");
+		js.executeScript("arguments[0].click();", comboPackRadio);
+	}
+	public void clickOnSaveButton() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,450)", "");
+		js.executeScript("arguments[0].click();", saveButton);
+	}
+
 }

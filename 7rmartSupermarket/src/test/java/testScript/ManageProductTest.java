@@ -40,5 +40,9 @@ public class ManageProductTest extends Base {
 		String note=ExcelUtility.readStringData(1, 6, "ManageProductPage");
 		manageproduct.enteraNoteOnDescriptionField(note);
 		manageproduct.clickOnavailabilityofStockOnStockfield();
+		manageproduct.uploadProductPictureInImageField();
+		manageproduct.clickFeaturedInFeaturedField();
+		manageproduct.clickComboDetailsinComboPackField();
+		manageproduct.clickOnSaveButton();
 	}
 }
