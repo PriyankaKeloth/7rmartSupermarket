@@ -25,6 +25,7 @@ public class AdminUserPage {
 @FindBy(id="un")private WebElement usernamesearch;
 @FindBy(id="ut")private WebElement usertypesearch;
 @FindBy(xpath="//button[@name='Search']")private WebElement searchsubmittbotton;
+@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement alert;
 
 
 
@@ -69,4 +70,7 @@ public class AdminUserPage {
   public void clickOnSearchSubmittButton() {
 	  searchsubmittbotton.click();
   }
+  public boolean usercreatedSuccessfullyAlert() {
+		return alert.isDisplayed();
+	}
 }

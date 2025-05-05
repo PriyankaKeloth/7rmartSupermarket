@@ -3,9 +3,11 @@ package testScript;
 
 
 
+
+
 import java.io.IOException;
 
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.Base;
@@ -16,7 +18,7 @@ import utilities.RandomDataUtility;
 
 public class AdminUserTest extends Base {
 	
-	@Test
+	@Test(priority=1,description="verifying whether the admin is able to add new user")
 	public void verifyAdmincanAddaNewUser() throws IOException {
 		
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
@@ -41,11 +43,9 @@ public class AdminUserTest extends Base {
 		
 	}
 	
-	@Test
+	@Test(priority=1,description="verifying whether the admin is able to search the user")
 	public void verifyAdmincanSearchaUser() throws IOException {
 		
-		 
-			
 			String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 			String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 			LoginPage login=new LoginPage(driver);
@@ -61,6 +61,9 @@ public class AdminUserTest extends Base {
 			adminuser.enterUserNameOnSearchAdminUser(usernamesearch1);
 			adminuser.selectUsertypeOnSearchAdminUser();
 			adminuser.clickOnSearchSubmittButton();
+			boolean isUserCreatedSuccessfull=adminuser.usercreatedSuccessfullyAlert();
+			Assert.assertTrue(isUserCreatedSuccessfull,"Admin was unable successfully search a  user");
+			
 	}
 
 }

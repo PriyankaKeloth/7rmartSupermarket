@@ -21,4 +21,10 @@ public class RandomDataUtility {
 	public String createRandomFullAddress() {
 		return faker.address().fullAddress();
 	}
+	public String createRandomProductCategory() {
+		return faker.commerce().department();	
+    }
+	public String createRandomImages() {
+		return faker.internet().image();
+	}
 }
