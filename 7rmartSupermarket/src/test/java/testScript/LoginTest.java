@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 	
-@Test(priority=1,description="verifying whether the user is able to successfully login with valid credentials")
+@Test(priority=1,description="verifying whether the user is able to successfully login with valid credentials",retryAnalyzer=retry.Retry.class)
 	public void verifyUserLoginwithValidCredentials() throws IOException {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
