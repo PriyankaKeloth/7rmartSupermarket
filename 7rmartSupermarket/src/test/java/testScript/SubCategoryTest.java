@@ -13,7 +13,7 @@ import utilities.RandomDataUtility;
 
 public class SubCategoryTest extends Base {
 	
-@Test
+@Test(priority=1,description="verifying whether the user is able to successfully add new Subcategory")
 	public void verifyUsercanAddNewSubCategory() throws IOException {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");

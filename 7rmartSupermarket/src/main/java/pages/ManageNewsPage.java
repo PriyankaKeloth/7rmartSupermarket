@@ -22,6 +22,7 @@ public class ManageNewsPage {
  @FindBy(xpath="//a[normalize-space()='Search']")private WebElement search;
  @FindBy(xpath="//input[@name='un']")private WebElement searchNews;
  @FindBy(xpath="//button[@name='Search']")private WebElement searchsubmittbutton;
+ @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement alert;
  
  
  
@@ -45,6 +46,9 @@ public class ManageNewsPage {
  }
  public void clickOnSearchButtonInSearchMangeNews() {
 	 searchsubmittbutton.click();
+ }
+ public boolean newsCreatedSuccessfullyAlertDisplayed() {
+	return alert.isDisplayed();
  }
 	
 }

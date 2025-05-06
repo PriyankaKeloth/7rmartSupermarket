@@ -31,19 +31,21 @@ public class AdminUserTest extends Base {
 		adminuser.clickOnAdminUsersField();
 		adminuser.selectOnManageUsers();
 		adminuser.clickOnNewUserButton();
-		RandomDataUtility random=new RandomDataUtility();
 		
+		RandomDataUtility random=new RandomDataUtility();
 		String newuserusername=random.createRandomUserName();
 		String newuserpassword=random.createRandomPassword();
 		adminuser.enterNewUserNameOnUsernameField(newuserusername);
 		adminuser.enterNewUserPasswordOnPasswordField(newuserpassword);
 		adminuser.clickUserTypeDropdown();
 	    adminuser.clickOnSaveButton();
+	    boolean isUserCreatedSuccessfullyAlertDisplayed=adminuser.usercreatedSuccessfullyAlert();
+	    Assert.assertTrue(isUserCreatedSuccessfullyAlertDisplayed, "Admin was unable to successfully add new user ");
 		
 		
 	}
 	
-	@Test(priority=1,description="verifying whether the admin is able to search the user")
+	@Test(priority=2,description="verifying whether the admin is able to search the user")
 	public void verifyAdmincanSearchaUser() throws IOException {
 		
 			String username=ExcelUtility.readStringData(0, 0, "LoginPage");
@@ -61,8 +63,6 @@ public class AdminUserTest extends Base {
 			adminuser.enterUserNameOnSearchAdminUser(usernamesearch1);
 			adminuser.selectUsertypeOnSearchAdminUser();
 			adminuser.clickOnSearchSubmittButton();
-			boolean isUserCreatedSuccessfull=adminuser.usercreatedSuccessfullyAlert();
-			Assert.assertTrue(isUserCreatedSuccessfull,"Admin was unable successfully search a  user");
 			
 	}
 
