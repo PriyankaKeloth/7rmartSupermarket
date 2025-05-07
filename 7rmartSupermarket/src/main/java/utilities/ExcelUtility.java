@@ -8,6 +8,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import constants.Constant;
+
 public class ExcelUtility {
 
 	public static XSSFWorkbook w;
@@ -19,7 +21,7 @@ public class ExcelUtility {
 
 	public static String readStringData(int i,int j,String sheet) throws IOException {
 
-	f= new FileInputStream("C:\\Users\\Ranil\\eclipse-workspace\\7rmartSupermarket\\src\\test\\resources\\TestData.xlsx");
+	f= new FileInputStream(Constant.TESTDATAFILE);
 
 	w= new XSSFWorkbook(f);
 
@@ -36,7 +38,7 @@ public class ExcelUtility {
 	public static String readIntegerData(int i,int j,String sheet) throws IOException {
 
 	
-			f= new FileInputStream("C:\\Users\\Ranil\\eclipse-workspace\\7rmartSupermarket\\src\\test\\resources\\TestData.xlsx");
+			f= new FileInputStream(Constant.TESTDATAFILE);
 
 			w= new XSSFWorkbook(f);
 

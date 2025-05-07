@@ -17,7 +17,7 @@ public class ExtentReportUtility {
 
 		extentReports.setSystemInfo("Organization", "Obsqura");
 
-		extentReports.setSystemInfo("Name", " Priyanka "); 
+		extentReports.setSystemInfo("Name", " Priyanka ");
 
 		return extentReports;
 

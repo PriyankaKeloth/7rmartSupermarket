@@ -11,29 +11,37 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtility {
- public static int IMPLICITWAIT=5; //here implicitwait is variable
- public static int EXPLICITWAIT=5;
- 
- public void fluentWaitElements(WebDriver driver, WebElement element, String attribute, String attributeValue,
+	public static int IMPLICITWAIT = 5; // here implicitwait is variable
+	public static int EXPLICITWAIT = 5;
+
+	public void fluentWaitElements(WebDriver driver, WebElement element, String attribute, String attributeValue,
 			int total) {
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(total))
 				.pollingEvery(Duration.ofSeconds(2)).ignoring(NoSuchElementException.class);
 		fluentWait.until(ExpectedConditions.attributeContains(element, attribute, attributeValue));
 	}
- 
- 
- public void implicitWait(WebDriver driver)
-	{
+
+	public void implicitWait(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICITWAIT));
 	}
- 
- public void waitForWebElementAlert(WebDriver driver) {
+
+	public void waitForWebElementAlert(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
- public void waitForWebElementToBeClickable(WebDriver driver,WebElement element) {
+
+	public void waitForWebElementToBeClickable(WebDriver driver, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
+	public void waitForWebElementToBeSelected(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
+		wait.until(ExpectedConditions.elementToBeSelected(element));
+	}
+
+	public void waitForWebElementTitle(WebDriver driver,String title) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
+		wait.until(ExpectedConditions.titleIs(title));
+	}
 }
