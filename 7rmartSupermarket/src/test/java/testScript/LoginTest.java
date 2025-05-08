@@ -1,5 +1,7 @@
 package testScript;
 
+
+
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -34,7 +36,7 @@ public class LoginTest extends Base {
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
 		boolean isAlertDisplayed = login.invalidUserNameAlert();
-		Assert.assertTrue(isAlertDisplayed, "User was able to Login with Invalid Username");
+		Assert.assertTrue(isAlertDisplayed,Messages.INVALIDUSERNAMECREDENTIALERROR);
 
 	}
 
@@ -47,23 +49,23 @@ public class LoginTest extends Base {
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
 		boolean isAlertDisplayed = login.invalidUserNameAlert();
-		Assert.assertTrue(isAlertDisplayed, "User was able to Login with Invalid Password");
+		Assert.assertTrue(isAlertDisplayed, Messages.INVALIDPASSWORDCREDENTIALERROR);
 	}
 
-	@Test(priority = 4, description = "verifying whether the user is unable to successfully login with Invalid credentials",dataProvider="LoginProvider")
-	public void verifyUserLoginwithInvalidCredentials() throws IOException {
-		String username = ExcelUtility.readStringData(3, 0, "LoginPage");
-		String password = ExcelUtility.readStringData(3, 1, "LoginPage");
+	@Test(dataProvider="loginProvider",priority = 4, description = "verifying whether the user is unable to successfully login with Invalid credentials")
+	public void verifyUserLoginwithInvalidCredentials(String username,String password ) throws IOException {
+		//String username = ExcelUtility.readStringData(3, 0, "LoginPage");
+		//String password = ExcelUtility.readStringData(3, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
 		login.enterUsernameOnUsernameField(username);
 		login.enterPasswordOnPasswordField(password);
 		login.clickOnSigninbutton();
 		boolean isAlertDisplayed = login.invalidUserNameAlert();
-		Assert.assertTrue(isAlertDisplayed, "User was able to Login with Invalid Credentials");
+		Assert.assertTrue(isAlertDisplayed, Messages.INVALIDCREDENTIALERROR);
 
 	}
 
-	@DataProvider(name = "LoginProvider")
+	@DataProvider(name = "loginProvider")
 	public Object[][] getDataFromDataProvider() throws IOException {
 		return new Object[][] { new Object[] { "admin", "admin" }, new Object[] { "1234", "123" }, new Object[] {
 				//ExcelUtility.readStringData(3, 0, "Login"), ExcelUtility.readStringData(3, 1, "Login")

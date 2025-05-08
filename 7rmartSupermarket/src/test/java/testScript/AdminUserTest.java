@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.Base;
+import constants.Messages;
 import pages.AdminUserPage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
@@ -40,7 +41,7 @@ public class AdminUserTest extends Base {
 		adminuser.clickUserTypeDropdown();
 	    adminuser.clickOnSaveButton();
 	    boolean isUserCreatedSuccessfullyAlertDisplayed=adminuser.usercreatedSuccessfullyAlert();
-	    Assert.assertTrue(isUserCreatedSuccessfullyAlertDisplayed, "Admin was unable to successfully add new user ");
+	    Assert.assertTrue(isUserCreatedSuccessfullyAlertDisplayed, Messages.ADMINCANADDNEWUSER);
 		
 		
 	}
