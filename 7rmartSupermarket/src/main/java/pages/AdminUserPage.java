@@ -32,43 +32,54 @@ public class AdminUserPage {
 
 
 
-  public void clickOnAdminUsersField() {
+  public HomePage clickOnAdminUsersField() {
 	adminuser.click();
+	return new HomePage(driver);
   }
 	
-  public void selectOnManageUsers() {
+  public AdminUserPage selectOnManageUsers() {
 	  manageuser.click();
+	  return this;
   }
-  public void clickOnNewUserButton() {
+  public AdminUserPage clickOnNewUserButton() {
 	  newuser.click();
+	  return this;
   }
-  public void enterNewUserNameOnUsernameField(String newuserusername) {
+  public AdminUserPage enterNewUserNameOnUsernameField(String newuserusername) {
 	  newUsername.sendKeys(newuserusername);
+	  return this;
   }
-  public void enterNewUserPasswordOnPasswordField(String newuserpassword) {
+  public AdminUserPage enterNewUserPasswordOnPasswordField(String newuserpassword) {
 	  userpassword.sendKeys(newuserpassword);
+	  return this;
   }	
-  public void clickUserTypeDropdown() {
+  public AdminUserPage clickUserTypeDropdown() {
 	  
 	  Select select= new Select(usertype);
 	  select.selectByVisibleText("Admin");
 	 // usertype.click();
+	  return this;
   }
-  public void clickOnSaveButton() {
+  public AdminUserPage clickOnSaveButton() {
 	  savebutton.click();
+	  return this;
   }
-  public void clickOnSearchButton() {
+  public AdminUserPage clickOnSearchButton() {
 	  searchbutton.click();
+	  return this;
   }
-  public void enterUserNameOnSearchAdminUser(String usernamesearch1) {
+  public AdminUserPage enterUserNameOnSearchAdminUser(String usernamesearch1) {
 	  usernamesearch.sendKeys(usernamesearch1);
+	  return this;
   }
-  public void selectUsertypeOnSearchAdminUser() {
+  public AdminUserPage selectUsertypeOnSearchAdminUser() {
 	  Select select= new Select(usertypesearch);
 	  select.selectByVisibleText("Admin");
+	  return this;
   }
-  public void clickOnSearchSubmittButton() {
+  public AdminUserPage clickOnSearchSubmittButton() {
 	  searchsubmittbotton.click();
+	  return this;
   }
   public boolean usercreatedSuccessfullyAlert() {
 		return alert.isDisplayed();

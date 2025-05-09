@@ -26,23 +26,29 @@ public class ManageNewsPage {
  
  
  
- public void clickOnManageNews() {
+ public ManageNewsPage clickOnManageNews() {
 	 manageNews.click();
+	 return this;
  }
- public void clickOnNewinManageNews() {
+ public ManageNewsPage clickOnNewinManageNews() {
 	 newNews.click();
+	 return this;
  }
- public void enteraNewsOnEnterTheNews(String news) {
+ public ManageNewsPage enteraNewsOnEnterTheNews(String news) {
 	 entertheNews.sendKeys(news);
+	 return this;
  }
- public void clickOnSaveButtonInEnterNewsInfo() {
+ public ManageNewsPage clickOnSaveButtonInEnterNewsInfo() {
 	 savebutton.click();
+	 return this;
  }
- public void clickOnSearchButton() {
+ public ManageNewsPage clickOnSearchButton() {
 	 search.click();
+	 return this;
  }
- public void entertheNewsOnSearchManageNews(String news1) {
+ public ManageNewsPage entertheNewsOnSearchManageNews(String news1) {
 	 searchNews.sendKeys(news1);
+	 return this;
  }
  public void clickOnSearchButtonInSearchMangeNews() {
 	 searchsubmittbutton.click();

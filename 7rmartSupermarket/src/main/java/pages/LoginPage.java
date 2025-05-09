@@ -21,16 +21,19 @@ public class LoginPage {
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")private WebElement alert;
 	
 
-	public void enterUsernameOnUsernameField(String username) {
+	public LoginPage enterUsernameOnUsernameField(String username) {
 		usernamefield.sendKeys(username);
+		return this;
 	}
 
-	public void enterPasswordOnPasswordField(String password) {
+	public LoginPage enterPasswordOnPasswordField(String password) {
 		passwordfield.sendKeys(password);
+		return this;
 	}
 
-	public void clickOnSigninbutton() {
+	public HomePage clickOnSigninbutton() {
 		signinbutton.click();
+		return new HomePage(driver);
 	}
 	
 	public boolean dashboardIsDisplayed() {

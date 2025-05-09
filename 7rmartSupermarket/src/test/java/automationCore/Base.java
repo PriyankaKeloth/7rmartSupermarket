@@ -23,7 +23,7 @@ public class Base {
 
 	public WebDriver driver;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 	public void initialiseBrowser(String browser) throws Exception {
 		prop=new Properties();
@@ -44,7 +44,7 @@ public class Base {
 																			// initializing time
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 
 	public void driverQuit(ITestResult iTestResult) throws IOException
 
@@ -60,7 +60,7 @@ public class Base {
 
 		}
 
-		// driver.quit();
+		 driver.quit();
 
 	}
 }

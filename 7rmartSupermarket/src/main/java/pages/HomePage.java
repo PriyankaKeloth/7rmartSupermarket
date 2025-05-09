@@ -16,11 +16,13 @@ public class HomePage {
  @FindBy(xpath="//a[@class='dropdown-item'][normalize-space()='Logout']")private WebElement logout;
  @FindBy(xpath = "//b[text()='7rmart supermarket']")private WebElement loginpage;
  
- public void clickOnAdminfield() {
+ public HomePage clickOnAdminfield() {
 	 admin.click();
+	 return this;
  }
- public void clickOnLogoutbutton() {
+ public LoginPage clickOnLogoutbutton() {
 	 logout.click();
+	 return new LoginPage(driver);
  }
  public boolean loginPageDisplayed() {
 	 return loginpage.isDisplayed(); 

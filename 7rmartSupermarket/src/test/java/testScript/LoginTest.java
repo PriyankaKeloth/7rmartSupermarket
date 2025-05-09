@@ -20,27 +20,23 @@ public class LoginTest extends Base {
 		String username = ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password = ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		boolean isDashboardDisplayed = login.dashboardIsDisplayed();
 		Assert.assertTrue(isDashboardDisplayed, Messages.VALIDCREDENTIALERROR);
 	}
 
-	@Test(priority = 2, description = "verifying whether the user is unable to successfully login with invalid username")
+	@Test(priority = 2, description = "verifying whether the user is unable to successfully login with invalid username",groups= {"smoke"})
 	public void verifyUserLoginwithInvalidUsername() throws IOException {
 		String username = ExcelUtility.readStringData(1, 0, "LoginPage");
 		String password = ExcelUtility.readStringData(1, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		boolean isAlertDisplayed = login.invalidUserNameAlert();
 		Assert.assertTrue(isAlertDisplayed,Messages.INVALIDUSERNAMECREDENTIALERROR);
 
 	}
 
-	@Test(priority = 3, description = "verify whether the user is unable to successfully login with invalid password")
+	@Test(priority = 3, description = "verify whether the user is unable to successfully login with invalid password",groups= {"smoke"})
 	public void verifyUserLoginwithInvalidPassword() throws IOException {
 		String username = ExcelUtility.readStringData(2, 0, "LoginPage");
 		String password = ExcelUtility.readStringData(2, 1, "LoginPage");

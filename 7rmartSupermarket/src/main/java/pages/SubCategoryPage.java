@@ -24,21 +24,26 @@ public class SubCategoryPage {
 	
 	
 	
-	public void clickOnMoreInfoInSubCategoryField() {
+	public SubCategoryPage clickOnMoreInfoInSubCategoryField() {
 		subcategoryMoreinfo.click();
+		return this;
 	}
-	public void clickOnNewInListSubCategories() {
+	public SubCategoryPage clickOnNewInListSubCategories() {
 		newSubCategory.click();
+		return this;
 	}
-	public void selectCategoryOnCategoryField() {
+	public SubCategoryPage selectCategoryOnCategoryField() {
 		Select select= new Select(category);
 		  select.selectByVisibleText("Grocery");
+		  return this;
 	}
-	public void enterSubcategoryOnSubcategoryField(String subCatName) {
+	public SubCategoryPage enterSubcategoryOnSubcategoryField(String subCatName) {
 		subCategory.sendKeys(subCatName);
+		return this;
 	}
-	public void clickOnSaveButton() {
+	public SubCategoryPage clickOnSaveButton() {
 		saveButton.click();
+		return this;
 	}
 	public boolean subcategotySuccessfullyCreatedAlert() {
 		return alert.isDisplayed();
