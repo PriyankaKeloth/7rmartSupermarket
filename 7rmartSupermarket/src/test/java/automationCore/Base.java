@@ -23,11 +23,11 @@ public class Base {
 
 	public WebDriver driver;
 
-	@BeforeMethod(alwaysRun=true)
+	@BeforeMethod(alwaysRun = true)
 	@Parameters("browser")
 	public void initialiseBrowser(String browser) throws Exception {
-		prop=new Properties();
-		fs=new FileInputStream(Constant.CONFIGFILE);
+		prop = new Properties();
+		fs = new FileInputStream(Constant.CONFIGFILE);
 		prop.load(fs);
 		if (browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
@@ -44,7 +44,7 @@ public class Base {
 																			// initializing time
 	}
 
-	@AfterMethod(alwaysRun=true)
+	@AfterMethod(alwaysRun = true)
 
 	public void driverQuit(ITestResult iTestResult) throws IOException
 
@@ -60,7 +60,7 @@ public class Base {
 
 		}
 
-		 driver.quit();
+		driver.quit();
 
 	}
 }

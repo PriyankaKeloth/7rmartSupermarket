@@ -17,44 +17,39 @@ public class ExcelUtility {
 	public static XSSFSheet s;
 
 	public static FileInputStream f;
-	
 
-	public static String readStringData(int i,int j,String sheet) throws IOException {
+	public static String readStringData(int i, int j, String sheet) throws IOException {
 
-	f= new FileInputStream(Constant.TESTDATAFILE);
+		f = new FileInputStream(Constant.TESTDATAFILE);
 
-	w= new XSSFWorkbook(f);
+		w = new XSSFWorkbook(f);
 
-	s= w.getSheet(sheet);
+		s = w.getSheet(sheet);
 
-	Row r=s.getRow(i);
+		Row r = s.getRow(i);
 
-	Cell c=r.getCell(j);
+		Cell c = r.getCell(j);
 
-	return c.getStringCellValue();
+		return c.getStringCellValue();
 
 	}
 
-	public static String readIntegerData(int i,int j,String sheet) throws IOException {
+	public static String readIntegerData(int i, int j, String sheet) throws IOException {
 
-	
-			f= new FileInputStream(Constant.TESTDATAFILE);
+		f = new FileInputStream(Constant.TESTDATAFILE);
 
-			w= new XSSFWorkbook(f);
+		w = new XSSFWorkbook(f);
 
-			s= w.getSheet(sheet);
+		s = w.getSheet(sheet);
 
-			Row r=s.getRow(i);
+		Row r = s.getRow(i);
 
-			Cell c=r.getCell(j);
+		Cell c = r.getCell(j);
 
-			int value=(int) c.getNumericCellValue();
+		int value = (int) c.getNumericCellValue();
 
-			return String.valueOf(value);
+		return String.valueOf(value);
 
-			}
-	
-	
+	}
+
 }
-
-

@@ -40,7 +40,7 @@ public class WaitUtility {
 		wait.until(ExpectedConditions.elementToBeSelected(element));
 	}
 
-	public void waitForWebElementTitle(WebDriver driver,String title) {
+	public void waitForWebElementTitle(WebDriver driver, String title) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICITWAIT));
 		wait.until(ExpectedConditions.titleIs(title));
 	}

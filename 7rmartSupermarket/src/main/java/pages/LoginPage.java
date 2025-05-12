@@ -13,13 +13,17 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//input[@placeholder='Username']")private WebElement usernamefield;
-	@FindBy(xpath = "//input[@placeholder='Password']")private WebElement passwordfield;
-	@FindBy(xpath = "//button[text()='Sign In']")private WebElement signinbutton;
-	@FindBy(xpath = "//p[text()='Dashboard']")private WebElement dashboard;
-	
-	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")private WebElement alert;
-	
+	@FindBy(xpath = "//input[@placeholder='Username']")
+	private WebElement usernamefield;
+	@FindBy(xpath = "//input[@placeholder='Password']")
+	private WebElement passwordfield;
+	@FindBy(xpath = "//button[text()='Sign In']")
+	private WebElement signinbutton;
+	@FindBy(xpath = "//p[text()='Dashboard']")
+	private WebElement dashboard;
+
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	private WebElement alert;
 
 	public LoginPage enterUsernameOnUsernameField(String username) {
 		usernamefield.sendKeys(username);
@@ -35,11 +39,11 @@ public class LoginPage {
 		signinbutton.click();
 		return new HomePage(driver);
 	}
-	
+
 	public boolean dashboardIsDisplayed() {
 		return dashboard.isDisplayed();
 	}
-	
+
 	public boolean invalidUserNameAlert() {
 		return alert.isDisplayed();
 	}
