@@ -13,14 +13,12 @@ import utilities.ExcelUtility;
 
 public class HomeTest extends Base {
 	
-	@Test
+	@Test(priority=1,description="Verify whether the user can able to successfully Logout after login")
  public void verifyUsercanSuccessfullyLogoutAfterLogin() throws IOException {
 	 String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		HomePage home=new HomePage(driver);
 		home.clickOnAdminfield();
 		home.clickOnLogoutbutton();

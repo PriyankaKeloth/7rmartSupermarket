@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.Base;
+import constants.Messages;
 import pages.LoginPage;
 import pages.SubCategoryPage;
 import utilities.ExcelUtility;
@@ -18,9 +19,7 @@ public class SubCategoryTest extends Base {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		SubCategoryPage subcategory=new SubCategoryPage(driver);
 		subcategory.clickOnMoreInfoInSubCategoryField();
 		subcategory.clickOnNewInListSubCategories();
@@ -30,7 +29,7 @@ public class SubCategoryTest extends Base {
 		subcategory.enterSubcategoryOnSubcategoryField(subCatName);
 		subcategory.clickOnSaveButton();
 		boolean isSuccessfullyCreatedAlertDisplyed=subcategory.subcategotySuccessfullyCreatedAlert();
-		Assert.assertTrue(isSuccessfullyCreatedAlertDisplyed,"User was unable to add subcategory successfully");
+		Assert.assertTrue(isSuccessfullyCreatedAlertDisplyed,Messages.USERCANADDNEWSUBCATEGORY);
 	}
 	
 }

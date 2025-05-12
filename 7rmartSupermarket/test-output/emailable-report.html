@@ -8,15 +8,20 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">multibrowsertesting</th></tr>
-<tr><td><a href="#t0">test2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,845</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">test1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,842</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">19,687</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">13,310</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">multibrowsertesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testScript.LoginTest</td><td><a href="#m0">verifyUserLoginwithInvalidPassword</a></td><td rowspan="1">1746803634056</td><td rowspan="1">1106</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testScript.HomeTest</td><td><a href="#m1">verifyUsercanSuccessfullyLogoutAfterLogin</a></td><td rowspan="1">1746803629790</td><td rowspan="1">5372</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testScript.ManageNewsTest</td><td><a href="#m0">verifyUsercanAddNews</a></td><td rowspan="1">1747048383722</td><td rowspan="1">3670</td></tr><tr class="failedeven"><td><a href="#m1">verifyUsercanSearchNews</a></td><td rowspan="1">1747048390646</td><td rowspan="1">1743</td></tr></tbody>
 </table>
-<h2>test2</h2><h3 id="m0">testScript.LoginTest#verifyUserLoginwithInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>test1</h2><h3 id="m1">testScript.HomeTest#verifyUsercanSuccessfullyLogoutAfterLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testScript.ManageNewsTest#verifyUsercanAddNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)&quot; because &quot;utilities.ExcelUtility.s&quot; is null
+	at utilities.ExcelUtility.readStringData(ExcelUtility.java:30)
+	at testScript.ManageNewsTest.verifyUsercanAddNews(ManageNewsTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testScript.ManageNewsTest#verifyUsercanSearchNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)&quot; because &quot;utilities.ExcelUtility.s&quot; is null
+	at utilities.ExcelUtility.readStringData(ExcelUtility.java:30)
+	at testScript.ManageNewsTest.verifyUsercanSearchNews(ManageNewsTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

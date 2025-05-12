@@ -25,9 +25,7 @@ public class AdminUserTest extends Base {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		AdminUserPage adminuser=new AdminUserPage(driver);
 		adminuser.clickOnAdminUsersField();
 		adminuser.selectOnManageUsers();
@@ -52,9 +50,7 @@ public class AdminUserTest extends Base {
 			String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 			String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 			LoginPage login=new LoginPage(driver);
-			login.enterUsernameOnUsernameField(username);
-			login.enterPasswordOnPasswordField(password);
-			login.clickOnSigninbutton();
+			login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 			AdminUserPage adminuser=new AdminUserPage(driver);
 			adminuser.clickOnAdminUsersField();
 			adminuser.selectOnManageUsers();

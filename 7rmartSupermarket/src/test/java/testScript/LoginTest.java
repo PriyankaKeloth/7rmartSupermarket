@@ -41,9 +41,7 @@ public class LoginTest extends Base {
 		String username = ExcelUtility.readStringData(2, 0, "LoginPage");
 		String password = ExcelUtility.readStringData(2, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		boolean isAlertDisplayed = login.invalidUserNameAlert();
 		Assert.assertTrue(isAlertDisplayed, Messages.INVALIDPASSWORDCREDENTIALERROR);
 	}
@@ -53,9 +51,7 @@ public class LoginTest extends Base {
 		//String username = ExcelUtility.readStringData(3, 0, "LoginPage");
 		//String password = ExcelUtility.readStringData(3, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username);
-		login.enterPasswordOnPasswordField(password);
-		login.clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
 		boolean isAlertDisplayed = login.invalidUserNameAlert();
 		Assert.assertTrue(isAlertDisplayed, Messages.INVALIDCREDENTIALERROR);
 
