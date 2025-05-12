@@ -16,6 +16,7 @@ import org.testng.annotations.Parameters;
 
 import constants.Constant;
 import utilities.ScreenShortUtility;
+import utilities.WaitUtility;
 
 public class Base {
 	Properties prop;
@@ -40,7 +41,9 @@ public class Base {
 		}
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // implicit commands works during browser
+		WaitUtility wait=new WaitUtility();
+		wait.implicitWait(driver);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // implicit commands works during browser
 																			// initializing time
 	}
 
