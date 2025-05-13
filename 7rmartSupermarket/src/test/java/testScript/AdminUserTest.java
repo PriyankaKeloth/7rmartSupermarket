@@ -33,7 +33,6 @@ public class AdminUserTest extends Base {
 		
 		adminuser=home.clickOnAdminUsersField();
 		adminuser.selectOnManageUsers().clickOnNewUserButton();
-		
 		RandomDataUtility random=new RandomDataUtility();
 		String newuserusername=random.createRandomUserName();
 		String newuserpassword=random.createRandomPassword();
