@@ -12,19 +12,16 @@ import pages.ManageNewsPage;
 import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base {
-	
+	ManageNewsPage managenews;
 	@Test(priority=1,description="Verify whether the user is able to successfully add the news")
 	public void verifyUsercanAddNews() throws IOException {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
 		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
-		ManageNewsPage managenews=new ManageNewsPage(driver);
-		managenews.clickOnManageNews();
-		managenews.clickOnNewinManageNews();
+		managenews.clickOnManageNews().clickOnNewinManageNews();
 		String news=ExcelUtility.readStringData(0, 0, "ManageNewsPage");
-		managenews.enteraNewsOnEnterTheNews(news);
-		managenews.clickOnSaveButtonInEnterNewsInfo();
+		managenews.enteraNewsOnEnterTheNews(news).clickOnSaveButtonInEnterNewsInfo();
 		boolean isNewsCreatedSuccessfullyAlertDisplayed=managenews.newsCreatedSuccessfullyAlertDisplayed();
 		Assert.assertTrue(isNewsCreatedSuccessfullyAlertDisplayed, Messages.USERCANADDNEWS);
 		
@@ -35,12 +32,9 @@ public class ManageNewsTest extends Base {
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
 		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
-		ManageNewsPage managenews=new ManageNewsPage(driver);
-		managenews.clickOnManageNews();
-		managenews.clickOnSearchButton();
+		managenews.clickOnManageNews().clickOnSearchButton();
 		String news1=ExcelUtility.readStringData(0, 0, "ManageNewsPage");
-		managenews.entertheNewsOnSearchManageNews(news1);
-		managenews.clickOnSearchButtonInSearchMangeNews();
+		managenews.entertheNewsOnSearchManageNews(news1).clickOnSearchButtonInSearchMangeNews();
 	}
 
 }
