@@ -18,7 +18,8 @@ public class HomeTest extends Base {
 	 String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password);
+		home=login.clickOnSigninbutton();
 		home.clickOnAdminfield().clickOnLogoutbutton();
 		boolean isLoginPadeisDisplayed=home.loginPageDisplayed();
 		Assert.assertTrue(isLoginPadeisDisplayed,Messages.USERCANSUCCESSFULLYLOGOUTAFTERLOGIN);
