@@ -9,6 +9,10 @@
       <class name="testScript.HomeTest"></class>
       <class name="testScript.AdminUserTest"></class>
       <class name="testScript.ManageNewsTest"></class>
+      <class name="testScript.ManageCategoryTest"></class>
+      
+      
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

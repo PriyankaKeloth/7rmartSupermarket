@@ -21,12 +21,24 @@ public class HomePage {
 	private WebElement loginpage;
 	@FindBy(xpath = "//p[normalize-space()='Admin Users']")
 	private WebElement adminuser;
+	@FindBy(xpath = "//p[text()='Manage News']")
+	private WebElement manageNews;
+	@FindBy(xpath = "//p[text()='Manage Category']")
+	private WebElement manageCategoryButton;
 
 	public AdminUserPage clickOnAdminUsersField() {
 		adminuser.click();
 		return new AdminUserPage(driver);
 	}
 
+	public ManageNewsPage clickOnManageNews() {
+		manageNews.click();
+		return new ManageNewsPage(driver);
+	}
+	public ManageCategoryPage clickCategory() {
+		manageCategoryButton.click();
+		return new ManageCategoryPage(driver);
+	}
 	public HomePage clickOnAdminfield() {
 		admin.click();
 		return this;

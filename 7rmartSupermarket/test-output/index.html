@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,41 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 5 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.AdminUserTest" class="method navigator-link" hash-for-method="verifyAdmincanSearchaUser">verifyAdmincanSearchaUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginwithInvalidCredentials(admin, admin)">verifyUserLoginwithInvalidCredentials(admin, admin)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginwithInvalidCredentials">verifyUserLoginwithInvalidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUsercanAddNews">verifyUsercanAddNews</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUsercanSearchNews">verifyUsercanSearchNews</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -142,7 +108,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginwithInvalidCredentials(1234, 123)">verifyUserLoginwithInvalidCredentials(1234, 123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testScript.AdminUserTest" class="method navigator-link" hash-for-method="verifyAdmincanSearchaUser">verifyAdmincanSearchaUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.LoginTest" class="method navigator-link" hash-for-method="verifyUserLoginwithInvalidCredentials(123, admin)">verifyUserLoginwithInvalidCredentials(123, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -162,7 +133,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUsercanAddNews">verifyUsercanAddNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyUsercanSearchNews">verifyUsercanSearchNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testScript.HomeTest" class="method navigator-link" hash-for-method="verifyUsercanSuccessfullyLogoutAfterLogin">verifyUsercanSuccessfullyLogoutAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyWhetherUserIsAbleToCreateNEwCategory">verifyWhetherUserIsAbleToCreateNEwCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -177,144 +163,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testScript.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserLoginwithInvalidCredentials(admin, admin)">
-                  </a> <!-- verifyUserLoginwithInvalidCredentials(admin, admin) -->
-                  <span class="method-name">verifyUserLoginwithInvalidCredentials</span>
-                  <span class="parameters">(admin,admin)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
-  (Session info: chrome=136.0.7103.93)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [366f36c2d1cb3160f806570fb7370a79, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\Ranil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56633/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 366f36c2d1cb3160f806570fb7370a79
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-	at pages.LoginPage.invalidUserNameAlert(LoginPage.java:48)
-	at testScript.LoginTest.verifyUserLoginwithInvalidCredentials(LoginTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verifying whether the user is unable to successfully login with Invalid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserLoginwithInvalidCredentials">
-                  </a> <!-- verifyUserLoginwithInvalidCredentials -->
-                  <span class="method-name">verifyUserLoginwithInvalidCredentials</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-[public void testScript.LoginTest.verifyUserLoginwithInvalidCredentials(java.lang.String,java.lang.String) throws java.io.IOException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: verifyUserLoginwithInvalidCredentials([java.lang.String arg0, java.lang.String arg1])
-Arguments: []
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verifying whether the user is unable to successfully login with Invalid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testScript.AdminUserTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAdmincanSearchaUser">
-                  </a> <!-- verifyAdmincanSearchaUser -->
-                  <span class="method-name">verifyAdmincanSearchaUser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, findElement {using=xpath, value=//p[normalize-space()=&apos;Admin Users&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.93, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\Ranil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56697/devtoo..., se:cdpVersion: 136.0.7103.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at pages.HomePage.clickOnAdminUsersField(HomePage.java:26)
-	at testScript.AdminUserTest.verifyAdmincanSearchaUser(AdminUserTest.java:54)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(verifying whether the admin is able to search the user)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testScript.ManageNewsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUsercanAddNews">
-                  </a> <!-- verifyUsercanAddNews -->
-                  <span class="method-name">verifyUsercanAddNews</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.ManageNewsPage.clickOnManageNews()&quot; because &quot;this.managenews&quot; is null
-	at testScript.ManageNewsTest.verifyUsercanAddNews(ManageNewsTest.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify whether the user is able to successfully add the news)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUsercanSearchNews">
-                  </a> <!-- verifyUsercanSearchNews -->
-                  <span class="method-name">verifyUsercanSearchNews</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;pages.ManageNewsPage.clickOnManageNews()&quot; because &quot;this.managenews&quot; is null
-	at testScript.ManageNewsTest.verifyUsercanSearchNews(ManageNewsTest.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify whether the user is able to successfully search the news)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -323,10 +171,10 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserLoginwithInvalidCredentials(1234, 123)">
-                  </a> <!-- verifyUserLoginwithInvalidCredentials(1234, 123) -->
+                  <a name="verifyUserLoginwithInvalidCredentials(123, admin)">
+                  </a> <!-- verifyUserLoginwithInvalidCredentials(123, admin) -->
                   <span class="method-name">verifyUserLoginwithInvalidCredentials</span>
-                  <span class="parameters">(1234,123)</span>
+                  <span class="parameters">(123,admin)</span>
                   <em>
 (verifying whether the user is unable to successfully login with Invalid credentials)                  </em>
                 </div> <!-- method-content -->
@@ -375,6 +223,41 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 (verifying whether the admin is able to add new user)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdmincanSearchaUser">
+                  </a> <!-- verifyAdmincanSearchaUser -->
+                  <span class="method-name">verifyAdmincanSearchaUser</span>
+                  <em>
+(verifying whether the admin is able to search the user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.ManageNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUsercanAddNews">
+                  </a> <!-- verifyUsercanAddNews -->
+                  <span class="method-name">verifyUsercanAddNews</span>
+                  <em>
+(Verify whether the user is able to successfully add the news)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUsercanSearchNews">
+                  </a> <!-- verifyUsercanSearchNews -->
+                  <span class="method-name">verifyUsercanSearchNews</span>
+                  <em>
+(Verify whether the user is able to successfully search the news)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -390,6 +273,23 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
                   <span class="method-name">verifyUsercanSuccessfullyLogoutAfterLogin</span>
                   <em>
 (Verify whether the user can able to successfully Logout after login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.ManageCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWhetherUserIsAbleToCreateNEwCategory">
+                  </a> <!-- verifyWhetherUserIsAbleToCreateNEwCategory -->
+                  <span class="method-name">verifyWhetherUserIsAbleToCreateNEwCategory</span>
+                  <em>
+(To verify whether user is able to create new category)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -414,6 +314,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
       &lt;class name=&quot;testScript.HomeTest&quot;/&gt;
       &lt;class name=&quot;testScript.AdminUserTest&quot;/&gt;
       &lt;class name=&quot;testScript.ManageNewsTest&quot;/&gt;
+      &lt;class name=&quot;testScript.ManageCategoryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -427,7 +328,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -465,56 +366,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserLoginwithInvalidCredentials')
-data.setCell(0, 2, 'testScript.LoginTest')
-data.setCell(0, 3, 11625);
+data.setCell(0, 1, 'verifyAdmincanAddaNewUser')
+data.setCell(0, 2, 'testScript.AdminUserTest')
+data.setCell(0, 3, 3115);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserLoginwithInvalidCredentials')
-data.setCell(1, 2, 'testScript.LoginTest')
-data.setCell(1, 3, 5731);
+data.setCell(1, 1, 'verifyWhetherUserIsAbleToCreateNEwCategory')
+data.setCell(1, 2, 'testScript.ManageCategoryTest')
+data.setCell(1, 3, 2852);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAdmincanAddaNewUser')
-data.setCell(2, 2, 'testScript.AdminUserTest')
-data.setCell(2, 3, 3185);
+data.setCell(2, 1, 'verifyUsercanAddNews')
+data.setCell(2, 2, 'testScript.ManageNewsTest')
+data.setCell(2, 3, 2407);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyUserLoginwithValidCredentials')
-data.setCell(3, 2, 'testScript.LoginTest')
-data.setCell(3, 3, 1759);
+data.setCell(3, 1, 'verifyAdmincanSearchaUser')
+data.setCell(3, 2, 'testScript.AdminUserTest')
+data.setCell(3, 3, 2183);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyUsercanSuccessfullyLogoutAfterLogin')
-data.setCell(4, 2, 'testScript.HomeTest')
-data.setCell(4, 3, 1530);
+data.setCell(4, 1, 'verifyUsercanSearchNews')
+data.setCell(4, 2, 'testScript.ManageNewsTest')
+data.setCell(4, 3, 1753);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyUsercanAddNews')
-data.setCell(5, 2, 'testScript.ManageNewsTest')
-data.setCell(5, 3, 685);
+data.setCell(5, 1, 'verifyUserLoginwithValidCredentials')
+data.setCell(5, 2, 'testScript.LoginTest')
+data.setCell(5, 3, 1715);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyUserLoginwithInvalidPassword')
-data.setCell(6, 2, 'testScript.LoginTest')
-data.setCell(6, 3, 617);
+data.setCell(6, 1, 'verifyUsercanSuccessfullyLogoutAfterLogin')
+data.setCell(6, 2, 'testScript.HomeTest')
+data.setCell(6, 3, 1533);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyUserLoginwithInvalidUsername')
+data.setCell(7, 1, 'verifyUserLoginwithInvalidPassword')
 data.setCell(7, 2, 'testScript.LoginTest')
-data.setCell(7, 3, 573);
+data.setCell(7, 3, 590);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyUserLoginwithInvalidCredentials')
+data.setCell(8, 1, 'verifyUserLoginwithInvalidUsername')
 data.setCell(8, 2, 'testScript.LoginTest')
 data.setCell(8, 3, 544);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyAdmincanSearchaUser')
-data.setCell(9, 2, 'testScript.AdminUserTest')
-data.setCell(9, 3, 274);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyUsercanSearchNews')
-data.setCell(10, 2, 'testScript.ManageNewsTest')
-data.setCell(10, 3, 252);
+data.setCell(9, 1, 'verifyUserLoginwithInvalidCredentials')
+data.setCell(9, 2, 'testScript.LoginTest')
+data.setCell(9, 3, 520);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -547,142 +444,131 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginwithValidCredentials</span>
-                <span class="method-start">3601 ms</span>
+                <span class="method-start">3216 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserLoginwithValidCredentials status=SUCCESS method=LoginTest.verifyUserLogin...)</span>
-                <span class="method-start">5367 ms</span>
+                <span class="method-start">4938 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">5536 ms</span>
+                <span class="method-start">5137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginwithInvalidUsername</span>
-                <span class="method-start">8435 ms</span>
+                <span class="method-start">7651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserLoginwithInvalidUsername status=SUCCESS method=LoginTest.verifyUserLoginw...)</span>
-                <span class="method-start">9010 ms</span>
+                <span class="method-start">8196 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">9131 ms</span>
+                <span class="method-start">8337 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginwithInvalidPassword</span>
-                <span class="method-start">11514 ms</span>
+                <span class="method-start">10638 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserLoginwithInvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginw...)</span>
-                <span class="method-start">12132 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyUserLoginwithInvalidCredentials</span>
-                <span class="method-start">12347 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">12350 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyUserLoginwithInvalidCredentials(admin, admin)</span>
-                <span class="method-start">14832 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyUserLoginwithInvalidCredentials status=FAILURE method=LoginTest.verifyUserLog...)</span>
-                <span class="method-start">20571 ms</span>
+                <span class="method-start">11229 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">20829 ms</span>
+                <span class="method-start">11377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyUserLoginwithInvalidCredentials(1234, 123)</span>
-                <span class="method-start">23294 ms</span>
+                <span class="method-name">verifyUserLoginwithInvalidCredentials(123, admin)</span>
+                <span class="method-start">13756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUserLoginwithInvalidCredentials status=SUCCESS method=LoginTest.verifyUserLog...)</span>
-                <span class="method-start">23840 ms</span>
+                <span class="method-start">14277 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testScript.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">23978 ms</span>
+                <span class="method-start">14427 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUsercanSuccessfullyLogoutAfterLogin</span>
-                <span class="method-start">26375 ms</span>
+                <span class="method-start">16838 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyUsercanSuccessfullyLogoutAfterLogin status=SUCCESS method=HomeTest.verifyUser...)</span>
-                <span class="method-start">27906 ms</span>
+                <span class="method-start">18373 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testScript.AdminUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">28016 ms</span>
+                <span class="method-start">18515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAdmincanAddaNewUser</span>
-                <span class="method-start">30418 ms</span>
+                <span class="method-start">20884 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyAdmincanAddaNewUser status=SUCCESS method=AdminUserTest.verifyAdmincanAddaNew...)</span>
-                <span class="method-start">33604 ms</span>
+                <span class="method-start">24003 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">33725 ms</span>
+                <span class="method-start">24131 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyAdmincanSearchaUser</span>
-                <span class="method-start">36158 ms</span>
+                <span class="method-start">26584 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyAdmincanSearchaUser status=FAILURE method=AdminUserTest.verifyAdmincanSearcha...)</span>
-                <span class="method-start">36435 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyAdmincanSearchaUser status=SUCCESS method=AdminUserTest.verifyAdmincanSearcha...)</span>
+                <span class="method-start">28768 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testScript.ManageNewsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">37346 ms</span>
+                <span class="method-start">28910 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyUsercanAddNews</span>
-                <span class="method-start">39760 ms</span>
+                <span class="method-start">31322 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyUsercanAddNews status=FAILURE method=ManageNewsTest.verifyUsercanAddNews()[pr...)</span>
-                <span class="method-start">40451 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyUsercanAddNews status=SUCCESS method=ManageNewsTest.verifyUsercanAddNews()[pr...)</span>
+                <span class="method-start">33733 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialiseBrowser(Chrome)</span>
-                <span class="method-start">40963 ms</span>
+                <span class="method-start">33886 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyUsercanSearchNews</span>
-                <span class="method-start">43275 ms</span>
+                <span class="method-start">36363 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyUsercanSearchNews status=FAILURE method=ManageNewsTest.verifyUsercanSearchNew...)</span>
-                <span class="method-start">43529 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyUsercanSearchNews status=SUCCESS method=ManageNewsTest.verifyUsercanSearchNew...)</span>
+                <span class="method-start">38118 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.ManageCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialiseBrowser(Chrome)</span>
+                <span class="method-start">38276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWhetherUserIsAbleToCreateNEwCategory</span>
+                <span class="method-start">40649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyWhetherUserIsAbleToCreateNEwCategory status=SUCCESS method=ManageCategoryTest...)</span>
+                <span class="method-start">43502 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

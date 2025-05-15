@@ -7,28 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testScript.LoginTest">
-        <methods>
-          <include name="verifyUserLoginwithInvalidCredentials" invocation-numbers="0"/>
-          <include name="initialiseBrowser"/>
-          <include name="driverQuit"/>
-        </methods>
-      </class> <!-- testScript.LoginTest -->
-      <class name="testScript.AdminUserTest">
+      <class name="testScript.ManageCategoryTest">
         <methods>
           <include name="initialiseBrowser"/>
-          <include name="verifyAdmincanSearchaUser"/>
           <include name="driverQuit"/>
+          <include name="verifyWhetherUserIsAbleToCreateNEwCategory"/>
         </methods>
-      </class> <!-- testScript.AdminUserTest -->
-      <class name="testScript.ManageNewsTest">
-        <methods>
-          <include name="initialiseBrowser"/>
-          <include name="verifyUsercanAddNews"/>
-          <include name="driverQuit"/>
-          <include name="verifyUsercanSearchNews"/>
-        </methods>
-      </class> <!-- testScript.ManageNewsTest -->
+      </class> <!-- testScript.ManageCategoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

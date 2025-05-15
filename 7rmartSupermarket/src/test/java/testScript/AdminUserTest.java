@@ -49,11 +49,12 @@ public class AdminUserTest extends Base {
 			String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 			String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 			LoginPage login=new LoginPage(driver);
-			login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
-			
+			login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password);
+			home=login.clickOnSigninbutton();
 			adminuser=home.clickOnAdminUsersField();
-			adminuser.selectOnManageUsers().clickOnNewUserButton().clickOnSearchButton();
-			String usernamesearch1=ExcelUtility.readStringData(0, 0, "AdminUserPage");
+			adminuser.selectOnManageUsers().clickOnSearchButton();
+			RandomDataUtility random=new RandomDataUtility();
+			String usernamesearch1=random.createRandomUserName();
 			adminuser.enterUserNameOnSearchAdminUser(usernamesearch1).selectUsertypeOnSearchAdminUser().clickOnSearchSubmittButton();
 			
 	}

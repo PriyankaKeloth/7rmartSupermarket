@@ -11,6 +11,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 import utilities.ExcelUtility;
+import utilities.RandomDataUtility;
 
 public class ManageNewsTest extends Base {
 	HomePage home;
@@ -22,8 +23,12 @@ public class ManageNewsTest extends Base {
 		LoginPage login=new LoginPage(driver);
 		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password);
 		home=login.clickOnSigninbutton();
-		managenews.clickOnManageNews().clickOnNewinManageNews();
-		String news=ExcelUtility.readStringData(0, 0, "ManageNewsPage");
+	    managenews=home.clickOnManageNews();
+	    managenews.clickOnNewinManageNews();
+		
+		RandomDataUtility random=new RandomDataUtility();
+		String news=random.createRandomUserName();
+		//String news=ExcelUtility.readStringData(0, 0, "ManageNewsPage");
 		managenews.enteraNewsOnEnterTheNews(news).clickOnSaveButtonInEnterNewsInfo();
 		boolean isNewsCreatedSuccessfullyAlertDisplayed=managenews.newsCreatedSuccessfullyAlertDisplayed();
 		Assert.assertTrue(isNewsCreatedSuccessfullyAlertDisplayed, Messages.USERCANADDNEWS);
@@ -34,9 +39,13 @@ public class ManageNewsTest extends Base {
 		String username=ExcelUtility.readStringData(0, 0, "LoginPage");
 		String password=ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login=new LoginPage(driver);
-		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password).clickOnSigninbutton();
-		managenews.clickOnManageNews().clickOnSearchButton();
-		String news1=ExcelUtility.readStringData(0, 0, "ManageNewsPage");
+		login.enterUsernameOnUsernameField(username).enterPasswordOnPasswordField(password);
+		home=login.clickOnSigninbutton();
+		managenews=home.clickOnManageNews();
+		managenews.clickOnSearchButton();
+		RandomDataUtility random=new RandomDataUtility();
+		String news1=random.createRandomUserName();
+		//String news1=ExcelUtility.readStringData(0, 0, "ManageNewsPage");
 		managenews.entertheNewsOnSearchManageNews(news1).clickOnSearchButtonInSearchMangeNews();
 	}
 

@@ -14,8 +14,7 @@ public class ManageNewsPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//p[text()='Manage News']")
-	private WebElement manageNews;
+	
 	@FindBy(xpath = "//a[text()=' New']")
 	private WebElement newNews;
 	@FindBy(id = "news")
@@ -31,10 +30,7 @@ public class ManageNewsPage {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement alert;
 
-	public ManageNewsPage clickOnManageNews() {
-		manageNews.click();
-		return this;
-	}
+	
 
 	public ManageNewsPage clickOnNewinManageNews() {
 		newNews.click();
@@ -61,8 +57,9 @@ public class ManageNewsPage {
 		return this;
 	}
 
-	public void clickOnSearchButtonInSearchMangeNews() {
+	public ManageNewsPage clickOnSearchButtonInSearchMangeNews() {
 		searchsubmittbutton.click();
+		return this;
 	}
 
 	public boolean newsCreatedSuccessfullyAlertDisplayed() {

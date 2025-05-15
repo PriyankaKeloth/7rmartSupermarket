@@ -9,5 +9,5 @@ public class Messages {
 	public static final String USERCANSUCCESSFULLYLOGOUTAFTERLOGIN="User was Unable to Logout Successfully";
 	public static final String ADMINCANADDNEWUSER="Admin was unable to successfully add new user";
 	public static final String USERCANADDNEWS="User was unable to successfully add news";
-	public static final String USERCANADDNEWSUBCATEGORY="User was unable to add subcategory successfully";
+	public static final String CATEGORYSAVEERROR="unable to Save Category";
 }
